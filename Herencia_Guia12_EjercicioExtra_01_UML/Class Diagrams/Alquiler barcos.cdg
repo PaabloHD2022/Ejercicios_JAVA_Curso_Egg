@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Alquiler barcos">
+  <ClassDiagramComponents>
+    <Class name="Alquiler" package="" visibility="public" xPosition="180.0" yPosition="65.0">
+      <Fields>
+        <Field name="Nombre" type="Object" visibility="private"/>
+        <Field name="dni" type="Object" visibility="private"/>
+        <Field name="alquiler" type="fecha" visibility="private"/>
+        <Field name="devolucion" type="fecha" visibility="private"/>
+        <Field name="amarre" type="fecha" visibility="private"/>
+        <Field name="tipo" type="barco" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="diasOcupacionAmarre" returnType="void" visibility="public"/>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Barco" package="" visibility="public" xPosition="657.0" yPosition="123.0">
+      <Fields>
+        <Field name="Matricula" type="Object" visibility="private"/>
+        <Field name="eslora" type="Object" visibility="private"/>
+        <Field name="aniofabricacion" type="Object" visibility="private"/>
+        <Field name="mastiles" type="Object" visibility="private"/>
+        <Field name="CVmotor" type="Object" visibility="private"/>
+        <Field name="camarotes" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="barcos" source="Barco" target="Alquiler" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
